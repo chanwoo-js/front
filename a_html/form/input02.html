@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input02</title>
+</head>
+<body>
+  <!-- submit, reset 속성값  -->
+  <h2>롯데 자이언츠 유니폼 주문하기</h2>
+  <form action="">
+    <label for="productName">상품명</label>
+    <input id="productName" type="text">
+    <br>
+    <label for="productCount">수량</label>
+    <input id="productCount" type="text">
+    <br>
+    <label for="productDate">배송 날짜 지정</label>
+    <input id="productDate" type="date">
+    <br>
+    <label for="productEmail">배송 확인 메세지 전송 이메일</label>
+    <input id="productEmail" type="email">
+    <br>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+  </form>
+
+  <!-- 2. number 속성값 -->
+  <input type="number" min="0" max="10" step="2"/>
+
+  <!-- 3. range 속성값 -->
+  <input type="range" value="50"/>
+
+  <!-- 4. button 속성값 -->
+   <input type="button"/ value="버튼에 표시할 내용">
+
+  <!-- 5. file 속성값 -->
+  <input type="file">
+
+  <!-- 6. hidden 속성값 -->
+  <input type="hidden" name="user-count" value="1">
+</body>
+</html>

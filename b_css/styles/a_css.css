@@ -1,0 +1,4 @@
+/* 안녕하세요 css주석입니다. */
+table, th, td {border: 1px solid black; border-collapse: collapse;}
+th {background-color: lightblue;}
+td {background-color: #ccc;}

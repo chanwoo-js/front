@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyperLink</title>
+  <style>
+    a {display: block;}
+  </style>
+</head>
+<body>
+  <!-- 최상단으로 가기, 새로고침 느낌 -->
+   <h1 id="hyperLink">하이퍼 링크</h1>
+
+  <a href="#">최상단으로 가기</a>
+
+  <a href="http://www.naver.com">네이버 바로가기</a>
+
+  <a href="http://www.naver.com">
+    <img style="height : 300px;" src="https://cdn.pixabay.com/photo/2024/03/08/09/47/ai-generated-8620359_1280.png" alt="고양이 사진">
+  </a>
+  <a href="http://www.naver.com" target="_blank">새로운 창 생성 후 이동</a>
+  <!-- 절대 경로 & 상대 경로 -->
+  <!-- 1. 절대 경로 -->
+  <h2>절대 경로</h2>
+  <h2 id="absolute">절대 경로</h2>
+  <a href="http://www.w3.org">w3c</a>
+  <a href="http://www.google.com">google</a>
+  <!-- 상대 경로 -->
+  <!-- 1. 같은 디렉토리 내에 있는 경우  ./파일명-->
+  <a href="./현재.jpg">현재</a>
+
+  <!-- 2. 상위 디렉토리 내에 있는 경우  ../파일명-->
+  <a href="../상위.jpg">상위</a>
+  <img src="./현재.jpg" alt="현재 폴더의 이미지">
+
+  <!-- 3. 하위 디렉토리 내에 있는 경우  ./하위 디렉토리명/파일명-->
+  <a href="./inner/하위.jpg">하위</a>
+
+  <!-- 현재 문서 내에서의 위치 이동 링크 -->
+  <h2 id="relative">상대경로</h2>
+  <a href="#hyperlink">h1 태그로 이동 (하이퍼 링크)</a>
+
+  <a href="#absolute">절대 경로로 이동</a>
+
+  <a href="#relative">상대 경로로 이동</a>
+</body>
+</html>

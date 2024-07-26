@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form01</title>
+</head>
+<body>
+    <h1>롯데 자인언츠몰 회원 가입을 환영합니다.</h1>
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label for="userId">아이디</label>
+            <input id="userId" type="text" placeholder="4~10자 사이 공백 없이" required>
+          </li>
+          <li>
+            <label for="userEmail">이메일</label>
+            <input id="userEmail" type="email" required>
+          </li>
+          <li>
+            <label for="userPassword">비밀번호</label>
+            <input id="userPassword" type="password" placeholder="문자와 숫자, 특수 기호 포함" required>
+          </li>
+          <li>
+            <label for="userPassword">비밀번호 확인</label>
+            <input id="userPassword" type="password" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+            <input id="email" type="radio" name="email" required>
+            <label for="email">메일 수신</label>
+            <input id="email" type="radio" name="emailn" readonly>
+            <label for="email">메일 수신 안함</label>
+      </fieldset>
+      <input type="submit" value="가입하기">
+      <input type="reset" value="취소">
+    </form>
+</body>
+</html>

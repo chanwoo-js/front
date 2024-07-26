@@ -1,0 +1,19 @@
+h1 {color: green;}
+
+/* id 선택자 : # */
+#monday {color: blueviolet;}
+
+/* 태그(타입, 요소) 선택자 */
+h2 {color: blue !important;}
+h1 {color: pink;}
+h1 {color: red;}
+h1 {color: orange;}
+
+/* class 선택자 : . */
+.git {color: lightgoldenrodyellow;}
+
+/* 스타일 상속 */
+/* background는 상속되지 않는다 */
+body {font-size: 30px; background-color: yellowgreen;}
+/* transparent는 투명 */
+p {font-size: 10px; background-color: transparent;}

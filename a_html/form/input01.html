@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input01</title>
+</head>
+<body>
+  <!-- input 태그  -->
+  <!-- type, name, value -->
+  <!-- type 속성의 값에 따라 input 태그의 형태가 달라진다. -->
+
+  <input type="text" />
+  <hr>
+  <!-- 1.text, password 속성값 -->
+  <label for="userId"  style="margin: 0 16px 0 0;">아이디</label>
+  <input id="userId" placeholder="아이디를 입력해주세요" type="text" style="size: 10; maxLength: 5;"/>
+  <br>
+  <!-- 비밀번호 -->
+  <label for="userPassword">비밀번호</label>
+  <input id="userPassword" type="password" placeholder="비밀번호를 입력해주세요">
+  <br>
+  <!-- 이메일 -->
+  <form action="">
+    <label for="userEmail" style="margin-right: 16px;">이메일</label>
+    <input id="userEmail" type="email" placeholder="이메일을 입력해주세요">
+    <br>
+    <button type="submit" style="width: 246px;">전송 버튼</button>
+  </form>
+  
+  <!-- check box 속성값 -->
+  <input id="checkbox" type="checkbox" value="롯데"  checked>
+  <label for="checkbox">롯데 자이언츠</label>
+  <input id="checkbox"  type="checkbox" value="기아">
+  <label for="checkbox">기아 타이거즈</label>
+  <input id="checkbox"  type="checkbox" value="LG">
+  <label for="checkbox">LG 트윈스</label>
+  <input id="checkbox"  type="checkbox" value="한화">
+  <label for="checkbox">한화 이글스</label>
+
+  <!-- radio 속성값-->
+  <h3>성별이 무엇입니까?</h3>
+  <input id="radiobox" type="radio" name="gender" >
+  <label for="radiobox">남</label>
+  <input id="radiobox" type="radio" name="gender">
+  <label for="radiobox">여</label>
+
+  <!--  -->
+  <h3>이벤트 메시지 수신 동의</h3>
+  <input id="radiobox" type="radio" name="gender" >
+  <label for="radiobox">남</label>
+  <input id="radiobox" type="radio" name="gender">
+  <label for="radiobox">여</label>
+</body>
+</html>
