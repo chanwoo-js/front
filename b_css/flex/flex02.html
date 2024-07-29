@@ -33,6 +33,13 @@
     .example5 .basis-1 {flex-basis: 100px;flex-shrink: 5;}
     .example5 .basis-2 {flex-basis: 200px;flex-shrink: 3;}
     .example5 .basis-3 {flex-basis: 300px;flex-shrink: 1;}
+
+    /* 속성값이 클수록 차지하는 너비값이 가장 작다 */
+    #shrink {display: flex; width: 400px; border: 1px solid black; }
+    .box {flex-grow: 1; flex-basis: 200px; margin: 5px; text-align: center; line-height: 100px; color: white;}
+    .shrink-1 {background-color: red; flex-shrink: 1;}
+    .shrink-2 {background-color: green; flex-shrink: 2;}
+    .shrink-3 {background-color: blue; flex-shrink: 3;}
   </style>
 </head>
 <body>
@@ -53,10 +60,10 @@
     <div class="item grow-3">3</div>
   </div>
   <h2>shrink</h2>
-  <div class="container example4">
-    <div class="item shrink-1">1</div>
-    <div class="item shrink-2">2</div>
-    <div class="item shrink-3">3</div>
+  <div id="shrink">
+    <div class="box shrink-1">1</div>
+    <div class="box shrink-2">2</div>
+    <div class="box shrink-3">3</div>
   </div>
   <h2>basis</h2>
   <div class="container example5">
