@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <style>
+    p {width: 300px; height: 200px; border: 1px solid #ccc; padding: 10px;  }
+    /* 1. static 속성값  : 기본 웹 문서의 흐름 */
+    #para1 {position:static;}
+    /* 2. relative 속성값 */
+    #para2 {position:relative;}
+    /* 2-1. 위쪽으로 마이너스 값 지정 시 위로 이동  */
+    #para3 {position: relative; left: 100px; top:-50px;}
+    /* 3. fixed 브라우저 창 기준으로 위치 ㅏㅏ고정 */
+    #para4 {position: fixed; top: 30px; right: 30px; width: 100px; height: 100px; background-color: #222;}
+
+  </style>
+</head>
+<body>
+  <p id="para1">this is a paragraph</p>
+  <p id="para2">this is a paragraph</p>
+  <p id="para3">this is a paragraph</p>
+  <p id="para4">this is a paragraph</p>
+</body>
+</html>

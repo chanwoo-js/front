@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex02</title>
+  <style>
+    .container {display: flex; margin: 10px auto; width: 80%; padding: 10px; border: 1px solid #ccc; justify-content: space-around; align-items: flex-start; flex-wrap: nowrap;}
+    .item {background-color: #ffcccb; padding: 20px; margin: 5px; border: 1px solid #000; min-width: 50px; text-align: center;} 
+    /* .example1 부모요소 내의 .flex-1 요소를 지정 */
+    .example1 .flex-1 {flex: 1;}
+    .example1 .flex-2 {flex: 2;}
+    .example1 .flex-3 {flex: 1;}
+    /* flex 아이템의 최소 크기 값 지정 */
+    .example2 .flex-1-min {flex:1 200px;}
+    .example2 .flex-2-min {flex:2 200px;}
+    .example2 .flex-3-min {flex:1 200px;}
+    /* 
+    flex 속성 ( 한번에 작성 가능 ) flex : 1 (grow) 200px (basis)
+    grow : 늘어나는 비율이 같음
+    shrik : 줄어드는 속도를 지정
+    basis 속성의 약칭  
+    */
+    .example3 .grow-1 {flex-grow: 1;}
+    .example3 .grow-2 {flex-grow: 2;}
+    .example3 .grow-3 {flex-grow: 3;}
+
+    .example4 .shrink-1 {flex-shrink: 1; flex-grow: 1;}
+    .example4 .shrink-2 {flex-shrink: 2; flex-grow: 1;}
+    .example4 .shrink-3 {flex-shrink: 3; flex-grow: 1;}
+    /* .example4 {width: 400px;} */
+    
+    .example5 .basis-1 {flex-basis: 100px;flex-shrink: 5;}
+    .example5 .basis-2 {flex-basis: 200px;flex-shrink: 3;}
+    .example5 .basis-3 {flex-basis: 300px;flex-shrink: 1;}
+  </style>
+</head>
+<body>
+  <div class="container example1">
+    <div class="item flex-1">1</div>
+    <div class="item flex-2">2</div>
+    <div class="item flex-3">3</div>
+  </div>
+  <div class="container example2">
+    <div class="item flex-1-min">1</div>
+    <div class="item flex-2-min">2</div>
+    <div class="item flex-3-min">3</div>
+  </div>
+  <h2>grow</h2>
+  <div class="container example3">
+    <div class="item grow-1">1</div>
+    <div class="item grow-2">2</div>
+    <div class="item grow-3">3</div>
+  </div>
+  <h2>shrink</h2>
+  <div class="container example4">
+    <div class="item shrink-1">1</div>
+    <div class="item shrink-2">2</div>
+    <div class="item shrink-3">3</div>
+  </div>
+  <h2>basis</h2>
+  <div class="container example5">
+    <div class="item basis-1">1</div>
+    <div class="item basis-2">2</div>
+    <div class="item basis-3">3</div>
+  </div>
+</body>
+</html>

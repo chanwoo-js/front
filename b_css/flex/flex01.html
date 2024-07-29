@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex01</title>
+  <style>
+    .container {display: flex; margin: 10px auto; padding: 10px; border: 1px solid #ccc; width: 80%; justify-content: space-around;}
+    .item {background-color: lightcoral; padding: 20px; margin : 5px; border: 1px solid #000; text-align: center; min-width: 50px; }
+    /* 기본 설정 :  행 방향 정렬 */
+    .example1 {flex-direction: row;}
+    /* 우측으로 90도 ?  reverse 속성 역방향 column-reverse */
+    .example2 {flex-direction: column;} 
+    /*  */
+    .example3 {
+      /* flex-wrap: nowrap; 기본값 (래핑되지 않음) */
+      flex-wrap: wrap-reverse;
+    }
+    /*  */
+    .example4 {flex-flow: row wrap-reverse;}
+  </style>
+</head>
+<body>
+  <h1>flexbox 강의 자료</h1>
+  <section>
+    <h2>1. 기본 flex 구조 만들기</h2>
+    <div class="container example1">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <h2>2. flex direction (주축/교차축 변경)</h2>
+    <div class="container example2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <h2>3. flex wrap (아이템 래핑)</h2>
+    <div class="container example3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+ 
+    </div>
+    <h2>3. flex flow (아이템 래핑 & 래핑 동시 지정 - 단축 속성)</h2>
+    <div class="container example4">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+
+    </div>
+  </section>
+</body>
+</html>
