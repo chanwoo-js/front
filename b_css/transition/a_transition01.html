@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a_transition01</title>
+  <style>
+    #container {
+      background-color: lightblue;
+      width: 150px;
+      height: 150px;
+      /* all 속성 :  모든 변경 가능한 속성에 적용 */
+      /* 각각의 속성명을 나열하여 각각 적용 가능 */
+      /* 어떤 속성에 얼마동안 어떤 효과를 지정할지 작성 */
+      /* transition:all 100ms ease-in-out; */
+      transition: background 800ms ease-in-out, padding 400ms ease-in-out;
+    }
+    #container:hover {
+      background-color: lightcoral;
+      font-size: 20px;
+      border-radius: 50%;
+    }
+    .box {
+      display: flex;
+    }
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+
+      /* opacity : 투명도를 설정 */
+      /* 속성값으로 0~1의 값을 지정 */
+      /* 숫자가 커질수록 선명, 작아질수록 희미 */
+      opacity: 1;
+      transition: width 2s ease-in-out, background 1.5s ease-in-out, opacity 1s ease-in-out, height 0.5s ease-in-out, border-radius 600ms ease-in-out;
+    }
+    .inner:hover {
+      width: 200px;
+      height: 150px;
+      background-color: lightpink;
+      opacity: 0.1;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">블럭</div>
+  <hr>
+  <div class="box">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>
