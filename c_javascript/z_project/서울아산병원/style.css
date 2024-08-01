@@ -1,0 +1,11 @@
+/* # header */
+/* header > user_action_container */
+.user_action_container {height: 38px; background-color:rgb(49, 51, 52)}
+.user_action {width: 1200px; height: 38px; margin: 0 auto;}
+.user_action ul {display: flex; justify-content: end; height: 38px;}
+.user_action a {display: inline-block; padding: 0 11px; height: 38px; line-height: 38px; text-align: center; font-size: 11px; color: #ddd;}
+.user_action span {font-size: 12px;}
+.user_action .language_box {color: white;}
+.user_action .serch_icon {font-size:25px; background-color: rgb(255, 143, 2); padding: 0 11px; color: white;}
+
+/* header > gnb_container */

@@ -1,7 +1,7 @@
 // queryselector로 'button' tag를 선택하고
 // button을 눌렀을때 updateName함수가 실행되게 하라
-const button = document.querySelector('button');
-button.addEventListener('click', updateName);
+// const button = document.querySelector('button');
+// button.addEventListener('click', updateName);
 
 // updateName 에 대한 기능 정의
 // prompt창으로 사용자로부터 이름을 입력받고 
@@ -22,7 +22,7 @@ function updateName() {
 console.log('안녕하세요');
 
 //clg : console.log(~~~)
-console.log(안녕하세요)
+console.log("안녕하세요");
 
 // node 환경에서 파일 실행
 // node 파일명.js
