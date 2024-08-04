@@ -1,11 +1,183 @@
 /* # header */
-/* header > user_action_container */
-.user_action_container {height: 38px; background-color:rgb(49, 51, 52)}
+/* header > .user_action_container */
+.user_action_container {height: 38px; background-color:rgb(49, 51, 52);}
 .user_action {width: 1200px; height: 38px; margin: 0 auto;}
 .user_action ul {display: flex; justify-content: end; height: 38px;}
 .user_action a {display: inline-block; padding: 0 11px; height: 38px; line-height: 38px; text-align: center; font-size: 11px; color: #ddd;}
-.user_action span {font-size: 12px;}
-.user_action .language_box {color: white;}
+.user_action .down_arrow {font-size: 6px; padding: 0 5px;}
+.user_action .language_box {background-color: #555555; font-weight: bold; color: white;}
 .user_action .serch_icon {font-size:25px; background-color: rgb(255, 143, 2); padding: 0 11px; color: white;}
 
-/* header > gnb_container */
+/* header > .gnb_container */
+.gnb_container {background-color: #ffffff; height: 90px;}
+.gnb {width: 1200px; height: 90px; margin: 0 auto; display: flex; justify-content: space-between;}
+.gnb h1 {width: 200px; height: 90px;}
+.gnb h1 a {height: 90px; line-height: 90px; display: flex; align-items: center;}
+.gnb h1 a img {height: 38px;}
+
+.gnb ul {display: flex; justify-content: space-between; flex: 1; height: 90px;}
+.gnb ul li a {height: 90px; display: inline-block; text-align: center; line-height: 90px; padding: 0 15px; font-size: 20px; font-weight: 600; color: #111;}
+
+/*# main */
+/* main > .main_slide_img_container */
+.main_slide_img_container {background-color: #555555;}
+.main_slide_img_container ul { height: 450px; overflow: hidden;}
+.main_slide_img_container img {width: 100%; height: 450px; object-fit: cover;}
+
+/* main > .total_search_container */
+.total_search_container {background-color: rgb(0, 153, 153); height: 80px;}
+.total_search {width: 1200px; height: 80px; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+.total_search label{width: 100px; height: 80px; line-height: 80px; font-size: 15px; color: #ffffff; font-weight: 600;text-align: center;}
+.total_search div {position: relative;}
+.total_search input {width: 600px; height: 50px; padding: 1px 2px 1px 30px; border-radius :25px; border: 1px solid #ffffff; font-size: 16px;}
+.total_search .fa-magnifying-glass {position: absolute; height: 50px; line-height: 50px; font-size: 30px; color:rgb(0, 153, 153);top: 0; right: 16px;}
+
+/* main > .main_service_container */
+.main_service_container {padding: 80px 0;}
+
+.main_service01 {width: 1200px; margin: 0 auto;}
+.main_service01 h2 {height: 60px; line-height: 60px; font-size: 40px; font-weight: bold; text-align: center; margin-bottom: 30px; color: #444444;}
+.main_service01 ul {height: 200px; border: 1px solid gainsboro; border-radius: 15px; display: flex; justify-content: space-between; align-items: center; background-color: #f9f9f9;}
+.main_service01 a {position: relative; display: block;}
+.main_service01 img {width: 100%; height: 198px;}
+.main_service01 p {position: absolute; width: 100%; top: 140px; font-size: 19px; font-weight: 600; text-align: center; color: #444444; }
+
+.main_service02 {width: 1200px; margin: 0 auto; padding-top: 35px;}
+.main_service02 ul {display: flex; justify-content: space-between; align-items: center;}
+.main_service02 a {width: 380px; display: flex; justify-content: space-between; align-items: center; background-color: #009999; border-radius: 15px;}
+.main_service02 li:nth-child(2) a{background-color: #60CDC7;}
+.main_service02 p {padding-left: 30px;  font-size:17px; color: #ffffff;}
+
+/* main > .main_info_container */
+.main_info_container {padding: 80px 0; border-top: 1px solid gainsboro;}
+.main_info {width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
+.main_info_left {width: 580px;}
+.main_info_right {width: 580px;}
+.main_info_left_tel {display: flex; justify-content: space-between; align-items: center;border-radius: 15px; background-color: #f9f9f9; border: 1px solid gainsboro;}
+.main_info_left_tel div {width: 100%;}
+.main_info_left_tel p {font-size: 24px; padding: 45px 0 0 25px; height: 85px;}
+.main_info_left_tel span {display: block;height: 85px; padding: 0 0 15px 25px; font-size: 50px; font-weight: 600; color: #009999}
+.main_info_left_hospital {margin-top: 40px; display: flex; justify-content: space-between;}
+.main_info_left_hospital div {border: 1px solid gainsboro; width: 275px; height: 120px; border-radius: 15px; padding-left: 25px;}
+.main_info_left_hospital h3 {height: 50%; padding: 30px 0 0 0; font-size: 22px; }
+.main_info_left_hospital p { color: #009999; font-weight: bold; font-size: 15px; height: 50%; padding: 10px 0 0 0;}
+
+.main_info_right_health {border: 1px solid gainsboro; border-radius: 15px;}
+.main_info_right_health > div:nth-child(1) {display: flex; justify-content: space-between; height: 85px;}
+.main_info_right_health h3{font-size: 24px; padding: 50px 0 0 25px;}
+.main_info_right_health p {padding: 50px 25px 0 0; color: #009999; font-size: 20px; font-weight: 600;}
+.main_info_right_health > div:nth-child(2) {padding-left: 15px; display: flex; justify-content: space-around; align-items: center; height: 85px;}
+.main_info_right_health > div:nth-child(2) > div {background-color: #ff9c1d; color: white; text-align: center; width: 160px; height: 35px; line-height: 35px; border-radius: 5px;}
+
+.main_info_right_health_bottom {margin-top: 40px; display: flex; justify-content: space-between;}
+.main_info_right_health_bottom div {width: 275px; height: 120px; border-radius: 15px; position: relative;}
+.main_info_right_health_bottom div p { color: #ffffff; font-weight: bold; font-size: 17px; position: absolute; top: 50%; transform: translate(0,-50%); text-align: center; width: 100%;}
+
+/* .main > .main_health_stroy_conainer */
+.main_health_story_conainer {background-color: #f9f9f9; height: 695px; padding: 80px 0;}
+.main_health_story_conainer h2 {text-align: center; height: 60px; font-size: 40px; font-weight: 600; width: 1200px; margin: 0 auto; margin-bottom: 30px;}
+.main_health_story {width: 1200px; margin: 0 auto; height: 320px; display: flex; justify-content: space-between;}
+.main_health_story div { width: 580px; }
+.main_health_story h2 {height: 60px; line-height: 60px; font-size: 40px; font-weight: bold; text-align: center; margin-bottom: 30px; color: #444444}
+.main_health_story_tv { border: 1px solid gainsboro; background-color: #ffffff; border-radius: 15px;}
+.main_health_story_tv h3 { font-size: 23px;text-align: center; padding: 40px 0 30px 0;}
+.main_health_story_tv_slide {display: flex; justify-content: space-between; align-items: center; padding-bottom: 100px; }
+.main_health_story_tv_slide div { height: 130px;}
+.main_health_story_tv_slide div p { padding: 10px 0 0 27px; color: #555555; font-size: 17px; font-weight: 600;}
+.main_health_story_tv_slide img { width: 100%; height: 130px; object-fit: contain;  display: inline-block; text-align: center; }
+.main_health_story_encyclopedia {display: flex; justify-content: space-between; align-items: center; padding: 40px 0 0 0px;}
+.main_health_story_encyclopedia div {display: flex; justify-content: space-between;align-items: center; background-color: #ff9c1d; width: 275px; border-radius: 10px;}
+.main_health_story_encyclopedia h3 {color: #ffffff; padding-left: 25px; font-size: 17px;}
+
+.main_health_story_info { border: 1px solid gainsboro; background-color: #ffffff; border-radius: 15px;}
+.main_health_story_info h3 { font-size: 23px;text-align: center; padding: 40px 0 30px 0;}
+.main_health_story_info_slide {display: flex; justify-content: space-between; align-items: center; padding-bottom: 100px; }
+.main_health_story_info_slide div { height: 130px;}
+.main_health_story_info_slide div p { padding: 10px 0 0 27px; color: #555555; font-size: 17px; font-weight: 600;}
+.main_health_story_info_slide img { width: 100%; height: 130px; object-fit: contain;  display: inline-block; text-align: center; }
+.main_health_story_info_info {display: flex; justify-content: space-between; align-items: center; padding: 40px 0 0 0px;}
+.main_health_story_info_info div {display: flex; justify-content: space-between;align-items: center; background-color: #009999; width: 275px; border-radius: 10px;}
+.main_health_story_info_info img {height: 80px; width: 100px; object-fit: contain;}
+.main_health_story_info_info h3 { color: #ffffff; padding-left: 25px; font-size: 17px;}
+
+/* .main > .main_notice_new */
+.main_notice_new {width: 1200px; margin: 0 auto; padding: 80px 0; display: flex; justify-content: space-between; align-items: center;}
+.main_notice h3 {font-size: 23px; padding-bottom: 30px; font-weight: 600;}
+.main_notice > div {width: 580px; border: 1px solid gainsboro; height: 170px; border-radius: 15px; padding: 25px 30px;}
+.main_notice li > a {display: flex; justify-content:space-between ; align-items: center;}
+.main_notice a {width: 518px; height: 40px; color: #111; font-weight: 600; font-size: 16px;}
+.main_notice span {color: gray;}
+.medical_index {margin-top: 40px;}
+
+.main_news h3 {font-size: 23px; padding-bottom: 30px; font-weight: 600;}
+.main_news > div {width: 580px; border: 1px solid gainsboro; height: 170px; border-radius: 15px; padding: 25px 30px;}
+.main_news li > a {display: flex; justify-content: space-between; align-items: center;}
+.main_news a {width: 518px; height: 40px; color: #111; font-weight: 600; font-size: 16px;}
+.main_news span {color: gray;}
+.medical_news_room {margin-top: 40px;}
+
+/* .main > .main_sns_container */
+.main_sns_container {background-color: #f9f9f9f9;}
+.main_sns {width: 1200px; margin: 0 auto; padding: 90px 0 80px 0; }
+.main_sns h2 {text-align: center; font-weight: 600; font-size: 40px; padding: 0 0 40px 0;}
+.main_sns ul {display: flex; justify-content: center;}
+.main_sns ul li:nth-child(1) {margin: 0;}
+.main_sns ul li {margin-left: 30px;}
+
+/* .main > .sub_hospital_ingo */
+.sub_hospital_info {width: 1200px; padding: 90px 0; margin: 0 auto;}
+.sub_hospital_info ul {display: flex; justify-content: space-between; overflow: hidden;}
+.sub_hospital_info ul li {border-radius: 50%; border: 1px solid gainsboro; margin-right: 55px;}
+.sub_hospital_info li a {display: block; text-align: center; position: relative;}
+.sub_hospital_info li a img{display: block; text-align: center;}
+.sub_hospital_info li a p {position: absolute; top: 65%; text-align: center; width: 100%;color: #444444; font-weight: 600;}
+
+/* #footer */
+/* .footer > .footer_container */
+.footer_container {background-color: #7e8389;height: 310px; padding: 50px 0;}
+
+.footer {width: 1200px; margin: 0 auto;}
+.footer_logo {height: 35px;}
+.foooter_top {display: flex; justify-content: space-between;}
+.foooter_top > ul {display: flex; justify-content: space-between;}
+.foooter_top > ul > li > a {color: white; font-size: 12px; font-weight: 600;}
+.foooter_top > ul > li:nth-child(2) > a {color: #ff7c6b;} 
+.foooter_top > ul > li > span {padding: 0 5px; color: darkgrey;}
+
+.footer_middle {padding: 30px 0; display: flex; justify-content: space-between;} 
+.footer_middle address {color: white; font-weight: 600; font-size: 11px;}
+.footer_middle address hr {display: block; border: 1px solid transparent; margin: 2px 0;}
+.footer_middle address a {color: white;}
+.footer_middle button {background-color: #111; color: white; border: #111; height: 23px;}
+.footer_middle .footer_middle_selector select {width: 170px; height: 25px;}
+.footer_middle .footer_middle_mark img {margin-left: 10px;}
+
+.footer_sns_img {
+  display: inline-block;
+  width: 35px;
+  height: 28px; 
+  background-image: url('images/bg_footSns.png');
+  background-repeat: no-repeat;
+}
+
+.footer_sns_img.facebook { background-position: 0 0; }
+.footer_sns_img.instagram { background-position: -34px 0; }
+.footer_sns_img.youtube { background-position: -68px 0; }
+.footer_sns_img.blog { background-position: -102px 0; }
+.footer_sns_img.twitter { background-position: -136px 0; }
+.footer_sns_img.play { background-position: -170px 0; }
+.footer_sns_img.kakaostory { background-position: -204px 0; }
+.footer_sns_img.kakaotalk { background-position: -238px 0; }
+.footer_sns_img.naver { background-position: -272px 0; }
+.footer_sns_img.pencil { background-position: -306px 0; }
+
+.footer_sns_img.facebook:hover { background-position: 0 -28px; }
+.footer_sns_img.instagram:hover { background-position: -34px -28px; }
+.footer_sns_img.youtube:hover { background-position: -68px -28px; }
+.footer_sns_img.blog:hover { background-position: -102px -28px; }
+.footer_sns_img.twitter:hover { background-position: -136px -28px; }
+.footer_sns_img.play:hover { background-position: -170px -34px; }
+.footer_sns_img.kakaostory:hover { background-position: -204px -28px; }
+.footer_sns_img.kakaotalk:hover { background-position: -238px -28px; }
+.footer_sns_img.naver:hover { background-position: -272px -28px; }
+.footer_sns_img.pencil:hover { background-position: -306px -28px; }
