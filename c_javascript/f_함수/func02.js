@@ -60,6 +60,7 @@ function square1(x) {
   let result = x*x;
   return result;
   // return  x*x; 
+  console.log(first)
 }
 console.log(square1(1));
 
