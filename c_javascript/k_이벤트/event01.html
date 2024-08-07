@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 50px;
+      height: 50px;
+      border: 1px solid beige;
+      margin: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- ! js 이벤트 -->
+  <!-- 1) html 이벤트 핸들러 프로퍼티 -->
+  <button id="bgChange">Change Background</button>
+  <span id="keydown"></span>
+
+  <hr/>
+  <!-- 2) 인라인 이벤트 핸들러 -->
+  <!-- on 키워드를 사용한 이벤트 속성을 태그에 지정 
+  : 연결할 함수는 js 파일에서 작성 
+  >> on 이벤트 - "js에서 정의된 함수"
+  
+  -->
+  <button 
+    id="textChange"
+    style="font-size: 20px;"
+        
+    onclick="textChangeFunc()"
+    >얍얍얍</button>
+
+    <hr/>
+
+    <p>1. querySelector</p>
+    <button id="btn">버튼을 클릭해주세요.</button>
+
+    <p>2. querySelectorAll</p>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <hr>
+    <!-- 3) addEventListerner 메서드 사용 -->
+     <button class="btnsChange">dddddd</button>
+     <button class="btnsChange">dddddd</button>
+     <button class="btnsChange">dddddd</button>
+
+     <hr>
+     <p>이벤트 제거</p>
+     <button id="remove" class="remove">등록</button>
+     <button>제거</button>
+  <script src="./event01.js"></script>
+</body>
+</html>
