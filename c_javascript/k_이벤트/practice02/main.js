@@ -1,6 +1,7 @@
 //const list = document.querySelectorAll("li");
-
-
+//1.element생성
+//2.추적하기
+//3.
 
 
 
