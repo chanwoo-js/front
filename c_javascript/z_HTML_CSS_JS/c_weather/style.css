@@ -1,0 +1,148 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('./images/cloudy.jpg') no-repeat center center;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#weather-info {
+  position: relative; /* dark모드시 글자 흰색으로 보이게 하기 위해서*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 920px;
+}
+
+#now {
+  margin: 30px 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  width: 430px;
+  height: 110px;
+}
+
+#weather h3 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+#weather h4 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#weather-detail {
+  position: relative;
+  width: 520px;
+  height: 100vh;
+  border-radius: 20px 0px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-contain {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  width: 85%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 20px 0px 0px 0px;
+}
+
+.search_icon {
+  position: absolute;
+  right: 60px;
+  background-color: transparent;
+  font-size: 20px;
+  
+  border: none;
+}
+.contents {
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 450px;
+}
+
+.contents p {
+  margin: 0;
+  padding: 0 20px 25px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contents hr {
+  width: 450px;
+}
+
+.contents div {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.dark {
+  z-index: 9999;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 30px;
+
+  border-radius: 25px;
+  border: none;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.light-mode {
+  z-index: 9999;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 30px;
+
+  border-radius: 25px;
+  border: none;
+  background-color: #fafafa;
+  cursor: pointer;
+}

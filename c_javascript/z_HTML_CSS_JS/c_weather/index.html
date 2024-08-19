@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="overlay"></div>
+      <div id="weather-info">
+        <p id="now"></p>
+        <div id="weather">
+          <h3 class="temp"></h3>
+          <h4 class="city-name"></h4>
+          <h3 class="weather-icon"></h3>
+        </div>
+      </div>
+      <div id="weather-detail">
+        <form class="search-contain" action="">
+          <input type="text" placeholder="search" id="search" />
+          <button class="search_icon" type="submit" onclick="() =>{
+              ev.preventDefault();
+
+          }">🔍</button>
+        </form>
+        <div class="contents">
+          <p>Weather Details</p>
+          <hr />
+          <div>
+            <span>Max/Min Temp</span>
+            <span class="temp-max-min"></span>
+          </div>
+          <div>
+            <span>Humidity</span>
+            <span class="humidity"></span>
+          </div>
+          <div>
+            <span>Wind</span>
+            <span class="wind"></span>
+          </div>
+          <div>
+            <span>Cloudy</span>
+            <span class="cloudy"></span>
+          </div>
+        </div>
+        <button class="dark">다크모드</button>
+      </div>
+    </div>
+    <script defer src="./main.js"></script>
+  </body>
+</html>

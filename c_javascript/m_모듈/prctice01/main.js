@@ -1,23 +1,25 @@
-// 1) add
-// : Named Import
-import { add } from "./mathModule.js";
-console.log(add(1,2));
+// mathModule.js
 
+// 사칙 연산의 함수를 정의
+// >> 각 함수는 인자값 2개를 받아 연산 후 값을 반환
+// : add(더하기), subtract(빼기), multiply(곱하기), divide(나누기)
 
-// 2) substract
-// : Default Import
-import substract from "./mathModule.js";
-console.log(substract(1,2));
+export function add(a, b) {
+  return a + b;
+}
 
+export default function subtract(a, b) {
+  return a - b;
+}
 
-// 3) multiply 
-// : Named Import (as 구문: mp)
-import { multiply as mp } from "./mathModule.js"; 
-console.log(mp (1,2));
+export let multiply = function(a, b) {
+  return a * b;
+}
 
-
-// 4) divide
-// : 모듈 전체 가져오기 (as 구문 : math)
-import * as mathModuleAll from "./mathModule.js"
-console.log(mathModuleAll.divide(1,2));
-
+export let divide = (a, b) => {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    console.log('0으로 나눌 수 없습니다.');
+  }
+}
