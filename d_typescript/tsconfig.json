@@ -104,5 +104,8 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": [
+    "src/**/*"
+, "src/a_타입스크립트", "src/b_환경설정"  ]
 }
