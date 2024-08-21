@@ -40,7 +40,7 @@ const user : {
 
 //! 객체의 선택 속성
 // : 선택적 프로퍼티 
-// >> 속성명 뒤에 물음표(?)를 붙여 해당 속성이 존재하지 않을 수도 있음을 표현
+// >> 속성명 "뒤에" 물음표(?)를 붙여 해당 속성이 존재하지 않을 수도 있음을 표현
 
 const ldk : {
   name : string;
@@ -50,4 +50,50 @@ const ldk : {
   // height 안적어도됨
 }
 //! 읽기 전용 속성
+// : 속성명 "앞에" readonly 키워드를 사용하여 해당 속의 제할당을 금지
+// >> 해당 키워드가 붙은 속성은 const 키워드를 사용하여 정의한 변수와 유사 (상수)
+const readonlyName: {
+  readonly name : string;
+  readonly age? : number; // 같이 쓰는경우는 잘없다
+  address? : string;
+} = {
+  name : "이승아",
+  age : 50,
+  address : "부산시 부산진구",
 
+}
+
+// 객체의 속성값 수정
+// 객체.속성 = 재할당값;
+
+// readonlyName.name = "이도경"; // 읽기 전용 속성은 재할당 불가
+// readonlyName.age = 30 // error
+readonlyName.address = "부산시 연제구";
+
+console.log(readonlyName);// { name: '이승아', age: 50, address: '부산시 연제구' }
+// (파일이 담긴 폴더의 터미널에서) ts-node 파일명.ts
+
+// 문제1
+const person : {
+  name : string;
+  age : number;
+  hobby? : string;
+} = {
+  name : "찬우",
+  age : 3,
+}
+
+console.log(person); // { name: '찬우', age: 3 };
+const car : {
+  readonly model : string;
+  year : number;
+} = {
+  model : "a",
+  year : 1992
+}
+// car.model = "d";
+
+// 읽기 전용 속성이므로 'model'에 할당할 수 없습니다.ts(2540)
+// (property) model: any
+
+  
