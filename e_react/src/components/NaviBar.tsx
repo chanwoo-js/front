@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Style01 from "../pages/g_Style/Style01";
 
 // Link vs navlink
 // >> a태그와 유사하게 동작
@@ -13,7 +14,7 @@ import { NavLink } from "react-router-dom";
 // link 와 유사하지만, 현재 활성화된 페이지 경로에 대한 추가적인 스타일 또는 클래스명 적용 가능
 
 function NaviBar() {
-  const links = ["/", "basic", "Hooks", "routerComponent", "parent","routerHook"];
+  const links = ["/", "basic", "Hooks", "routerComponent", "parent","routerHook", "axios", "globalState", "style"];
   return (
     <div
       style={{

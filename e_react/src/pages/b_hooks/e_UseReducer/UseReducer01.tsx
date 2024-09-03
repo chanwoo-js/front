@@ -57,6 +57,7 @@ function UseReducer01() {
 
   return (
     <div>
+    
       <h2>useState를 사용한 상태관리</h2>
       <p>count : {count}</p>
       <button onClick={handleIncrement}>증가</button>
@@ -66,6 +67,7 @@ function UseReducer01() {
       <p>count : {state.count}</p>
       <button onClick={() => dispatch({ type : "increment"})}>증가</button>
       <button onClick={() => dispatch({ type : "decrement"})}>감소</button>
+ 
     </div>
   );
 }

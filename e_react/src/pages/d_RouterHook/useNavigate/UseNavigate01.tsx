@@ -76,7 +76,7 @@ export default function UseNavigate01() {
   // 인증 값이 변하거나 navigate의 값이 바뀔때마다 리랜더링 시킴
   useEffect(() => {
     if(!isAuthenticated){
-      navigate("/login");
+      navigate("/");
     }
   },[isAuthenticated, navigate])
 
